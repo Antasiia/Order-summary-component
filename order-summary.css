@@ -1,0 +1,123 @@
+@import-normalize;
+
+body {
+  display: block;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+.container {
+  background-color: white;
+  max-width: 375px;
+  height: 520px;
+  margin: 200px auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 12px rgba(211, 211, 211, 0.8);
+  text-align: center;
+}
+
+.container img {
+  max-width: 375px;
+  border-radius: 20px 20px 0 0;
+}
+
+.order-summary {
+  margin: 0 45px;
+}
+
+.order-summary h1 {
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+}
+
+.selected-plan {
+  background-color: hsl(225, 100%, 98%);
+  max-width: 300px;
+  max-height: 100px;
+  margin: 20px 35px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.selected-plan a {
+  text-decoration: underline;
+  color: rgb(56, 42, 225);
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.selected-plan a:hover {
+  text-decoration: none;
+  color: rgb(56, 42, 225, 0.7);
+}
+
+.selected-plan h2 {
+  margin: 10px auto 0 -50px;
+  font-size: 14px;
+}
+.price {
+  margin: 5px auto 12px -60px;
+  font-size: 14px;
+}
+
+button {
+  background-color: rgb(56, 42, 225);
+  width: 300px;
+  margin-bottom: 20px;
+  color: white;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 8px 50px 1px rgba(34, 18, 105, 0.4);
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: rgb(56, 42, 225, 0.7);
+}
+
+.decision a {
+  display: block;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: smaller;
+}
+
+.decision a:hover {
+  color: black;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  font-family: inherit;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: auto;
+    float: none;
+  }
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+}
